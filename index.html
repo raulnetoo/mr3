@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milena Rezende</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Milena Rezende</h1>
+        <img src="img/01.jpeg" alt="Minha Foto" class="profile-picture">
+        
+        <h2>Sobre Mim</h2>
+        <p class="section-desc">Olá, meu nome é Milena Rezende e atuo com Social Media com experiência em [Suas Principais Habilidades]. Estou apaixonado por [Seu Interesse ou Área de Especialização] e estou comprometido em [Seu Objetivo ou Missão].</p>
+
+        <h2>Conheça nossos pacotes</h2>
+        <div class="package-container">
+            <div class="package">
+                <img src="img/pacotes/ok.jpg" alt="Pacote 1" onclick="openPopup('img/pacotes/ok.jpg', 'Pacote 1', 'Tudo que voce procura esta aqui, vem conferir logo corra, nao perca tempo, tudo auqi para vc..');">
+                <p onclick="openPopup('img/popup_image1.jpg', 'Título do Pop-up 1', 'Descrição do Pop-up 1');">R$ 4000,00</p>
+            </div>
+            <div class="package">
+                <img src="img/package2.jpg" alt="Pacote 2" onclick="openPopup('img/popup_image2.jpg', 'Título do Pop-up 2', 'Descrição do Pop-up 2');">
+                <p onclick="openPopup('img/popup_image2.jpg', 'Título do Pop-up 2', 'Descrição do Pop-up 2');">Descrição do Pacote 2</p>
+            </div>
+            <div class="package">
+                <img src="img/package3.jpg" alt="Pacote 3" onclick="openPopup('img/popup_image3.jpg', 'Título do Pop-up 3', 'Descrição do Pop-up 3');">
+                <p onclick="openPopup('img/popup_image3.jpg', 'Título do Pop-up 3', 'Descrição do Pop-up 3');">Descrição do Pacote 3</p>
+            </div>
+        </div>
+
+        <div class="package-container">
+            <div class="package">
+                <img src="img/package4.jpg" alt="Pacote 4" onclick="openPopup('img/popup_image4.jpg', 'Título do Pop-up 4', 'Descrição do Pop-up 4');">
+                <p onclick="openPopup('img/popup_image4.jpg', 'Título do Pop-up 4', 'Descrição do Pop-up 4');">Descrição do Pacote 4</p>
+            </div>
+            <div class="package">
+                <img src="img/package5.jpg" alt="Pacote 6" onclick="openPopup('img/popup_image5.jpg', 'Título do Pop-up 5', 'Descrição do Pop-up 5');">
+                <p onclick="openPopup('img/popup_image5.jpg', 'Título do Pop-up 5', 'Descrição do Pop-up 5');">Descrição do Pacote 5</p>
+            </div>
+            <div class="package">
+                <img src="img/package6.jpg" alt="Pacote 6" onclick="openPopup('img/popup_image6.jpg', 'Título do Pop-up 6', 'Descrição do Pop-up 6');">
+                <p onclick="openPopup('img/popup_image6.jpg', 'Título do Pop-up 6', 'Descrição do Pop-up 6');">Descrição do Pacote 6</p>
+            </div>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <img id="popup-image" src="" alt="Pop-up Image">
+                <h3 id="popup-title">Título do Pop-up</h3>
+                <p id="popup-description">Descrição do Pop-up</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Contato</h2>
+        <p>Se você deseja entrar em contato conosco, pode escolher uma das opções abaixo.</p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/seuperfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/mifrezende" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5517997227349" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <!-- Adicione mais ícones e links para outras redes sociais conforme necessário -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

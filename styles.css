@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #79c27781;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    color: #417546;
+    font-family: 'Amazone BT', serif;
+}
+
+h2 {
+    font-size: 20px;
+    color: #43814a;
+}
+
+p {
+    font-size: 15px;
+    color: #417546;
+}
+
+.section-desc {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    margin-top: 50px;
+}
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 24px;
+    color: black;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #417546;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.package-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.package {
+    width: 25%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    border: 1px solid #417546; /* Adicionamos uma borda com a cor #417546 */
+}
+
+.package img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Seu CSS existente aqui */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(121, 194, 119, 0.81);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#popup-image {
+    max-width: 100%;
+    max-height: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+#popup-title {
+    font-size: 24px;
+    color: #417546;
+}
+
+#popup-description {
+    font-size: 16px;
+    color: #333;
+}
