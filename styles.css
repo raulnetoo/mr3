@@ -1,6 +1,16 @@
+/* Importar a fonte Adelia (substitua a URL pela URL correta da fonte) */
+@import url('https://fonts.googleapis.com/css2?family=Adelia&display=swap');
+
+/* Reset de Estilos Padrão do Body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Seu Estilo Existente */
 body {
     font-family: Arial, sans-serif;
-    background-color: #79c27781;
+    background-color: #fdfdfd81;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -13,7 +23,7 @@ body {
 h1 {
     font-size: 36px;
     color: #417546;
-    font-family: 'Amazone BT', serif;
+    font-family: 'Adelia', sans-serif; /* Usar a fonte Adelia e fallback para sans-serif se não estiver disponível */
 }
 
 h2 {
@@ -33,10 +43,11 @@ p {
 .section-title {
     margin-top: 50px;
 }
+
 .container {
     max-width: 1000px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #79c27781;
     border-radius: 5px;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
 }
@@ -70,7 +81,6 @@ p {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-
 }
 
 .package {
@@ -80,7 +90,7 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.3); 
     text-align: center;
-    border: 1px solid #417546; /* Adicionamos uma borda com a cor #417546 */
+    border: 1px solid #417546;
 }
 
 .package img {
@@ -90,8 +100,6 @@ p {
     margin: 0 auto;
     display: block;
 }
-
-/* Seu CSS existente aqui */
 
 .popup {
     display: none;
@@ -141,4 +149,48 @@ p {
 #popup-description {
     font-size: 16px;
     color: #333;
+}
+
+/* Estilos para a imagem do canto inferior esquerdo */
+/* Estilos para a imagem do canto inferior esquerdo */
+.corner-image.left {
+    position: fixed;
+    width: auto; /* Ajuste conforme necessário */
+    height: 800px; /* Ajuste conforme necessário */
+    overflow: hidden; /* Isso ajuda a esconder qualquer conteúdo que ultrapasse as dimensões definidas */
+    bottom: 0; /* Ajuste para o canto inferior */
+    left: 0; /* Ajuste para o canto esquerdo */
+}
+
+.corner-image.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isso garante que a imagem cubra completamente o contêiner */
+}
+
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+/* Estilos para a imagem do canto inferior direito */
+.corner-image.right {
+    position: fixed;
+    width: 420px; /* Ajuste conforme necessário */
+    height: 900px; /* Ajuste conforme necessário */
+    overflow: hidden; /* Isso ajuda a esconder qualquer conteúdo que ultrapasse as dimensões definidas */
+    bottom: 0; /* Ajuste para o canto inferior */
+    right: 0; /* Ajuste para o canto direito */
+}
+
+.corner-image.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isso garante que a imagem cubra completamente o contêiner */
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
 }
