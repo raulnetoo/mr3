@@ -153,11 +153,11 @@ p {
     color: #333;
 }
 
-/* Estilos para a imagem do canto inferior esquerdo */
+
 /* Estilos para a imagem do canto inferior esquerdo */
 .corner-image.left {
     position: fixed;
-    width: auto; /* Ajuste conforme necessário */
+    width: 420px; /* Ajuste conforme necessário */
     height: 800px; /* Ajuste conforme necessário */
     overflow: hidden; /* Isso ajuda a esconder qualquer conteúdo que ultrapasse as dimensões definidas */
     bottom: 0; /* Ajuste para o canto inferior */
