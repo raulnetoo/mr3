@@ -1,5 +1,3 @@
-
-
 /* Reset de Estilos Padrão do Body */
 body {
     margin: 0;
@@ -47,6 +45,7 @@ p {
 }
 
 .container {
+    position: relative;
     max-width: 1000px;
     padding: 20px;
     background-color: #79c27781;
@@ -153,7 +152,6 @@ p {
     color: #333;
 }
 
-
 /* Estilos para a imagem do canto inferior esquerdo */
 .corner-image.left {
     position: fixed;
@@ -169,7 +167,6 @@ p {
     height: 100%;
     object-fit: cover; /* Isso garante que a imagem cubra completamente o contêiner */
 }
-
 
 .bottom-left {
     bottom: 0;
@@ -197,6 +194,26 @@ p {
     right: 0;
 }
 
+/* Estilos para o canto direito superior */
+.social-icons.top-right {
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+}
+
+.social-icons.top-right a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 24px;
+    color: black;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons.top-right a:hover {
+    transform: scale(1.2);
+    color: #417546;
+}
+
 /* Adicione estas regras ao seu arquivo styles.css */
 .profile-image {
     margin-bottom: 20px; /* Ou ajuste conforme necessário */
@@ -204,4 +221,14 @@ p {
 
 .image-space {
     height: 20px; /* Ou ajuste conforme necessário */
+}
+
+/* Estilos para layout responsivo */
+@media only screen and (max-width: 600px) {
+    /* Ajustes para telas pequenas (menos de 600px de largura) */
+    .corner-image.left,
+    .corner-image.right,
+    .social-icons.top-right {
+        display: none; /* Ocultar imagens e ícones no canto superior direito em telas pequenas */
+    }
 }
